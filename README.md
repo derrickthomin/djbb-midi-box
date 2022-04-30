@@ -1,14 +1,39 @@
 # djbb-midi-box
-DIY midi box based on a raspberry pi pico in a 3d printed case.
+DIY midi box based on a raspberry pi pico in a 3d printed case, featuring 16 arcade button "pads", 3 knobs for controlling volume & FX, and multiple modes of operation.
 
 **Features**: 
-* 
-* 
+* 16 (non-velocity sensitive) buttons for sending midi messages
+* Preset midi banks that can be re-mapped
+  * Note: these mappings are per session. They will not be saved when the device powers off.
+* Velocity control
+* Repeat mode with optional note lock
+  * With free or BPM sync (ROUGH bpm sync, I should say)
 
-## Thing
+## Hardware Needed
+* 1 Raspberry pi pico
+* 1 OLED screen [use this for the code to work out of the box](https://www.aliexpress.com/item/32957309383.html?spm=a2g0o.order_list.0.0.4488194dIRto7O)
+  * SSD1306
+* 12 m3 nuts and bolts
+* 16 arcade-style buttons
+  * The shallower ones... like [these](https://www.aliexpress.com/item/4000751585184.html?spm=a2g0o.order_list.0.0.11481802rvdrTG) 
+* 3 10k linear potentiometers
+* 1 3D Printed case (see here)
+
+**Note**: you should test everything before proceeding, especially if buying these alibaba parts.
+
+## Pico setup
+* Perform setup as described [here](https://www.raspberrypi.com/documentation/microcontrollers/micropython.html)
+* Add code.py and the lib folder to the base directory of your pico
+* If you aren't using the same screen as I noted above, you may have to alter code.py 
+
+## Building
+* Insert the buttons and pots into the front plate.
+* Use the M3 bolts to secure the screen, but DONT TIGHTEN TOO HARD. I cracked like 3 screens before I learned this lesson.
+* Wire the buttons and pots to the board
+* <INSERT TABLE - BTN TO WHICH PIN>
+* Wire the screen to the board
+* <INSERT WIRING GUIDE FOR SCREEN>
 
 
-## Thing 2
-
-
-## Thing 3
+## Operation
+  
