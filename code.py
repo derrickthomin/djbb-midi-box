@@ -1,8 +1,7 @@
 """
-<add a linnk to github>
-<add a link to printables>
-<add other required doc>
+See full build guide here: https://github.com/derrickthomin/djbb-midi-box
 
+Brought to you by DJ BAJA BLAST - https://www.djbajablast.com
 """
 
 import time
