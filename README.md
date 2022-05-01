@@ -10,6 +10,8 @@ DIY midi box based on a raspberry pi pico in a 3d printed case, featuring 16 arc
   * With free or BPM sync (ROUGH bpm sync, I should say)
 
 ## Hardware Needed
+* (Tools) - Soldering Iron, Solder, M3 Allen Wrench.
+* 1 3D Printed case (see here)
 * 1 Raspberry pi pico
 * 1 OLED screen [use this for the code to work out of the box](https://www.aliexpress.com/item/32957309383.html?spm=a2g0o.order_list.0.0.4488194dIRto7O)
   * SSD1306
@@ -19,10 +21,11 @@ DIY midi box based on a raspberry pi pico in a 3d printed case, featuring 16 arc
 * 16 arcade-style buttons
   * The shallower ones... like [these](https://www.aliexpress.com/item/4000751585184.html?spm=a2g0o.order_list.0.0.11481802rvdrTG) 
 * 3 10k linear potentiometers
-* 1 3D Printed case (see here)
 * 2 little clicky buttons for the screen controls (like [these](https://www.amazon.com/TWTADE-Yellow-Orange-6x6x5mm-Tactile/dp/B07C7211PJ/ref=sr_1_18?crid=3IQJG5HKILGWG&keywords=push+button+small+breadboard&qid=1651343850&sprefix=push+button+small+breadboar%2Caps%2C90&sr=8-18))
 * GET BTN DIMENSIONS ^^^
 * 1 micro USB cable
+
+**Skills Required**: Basic 3d printing. Beginner-intermediate soldering (we are using most of the pins on the pico so it gets crowded).
 
 **Note**: you should test everything before proceeding, especially if buying these alibaba parts.
 
@@ -92,8 +95,3 @@ Some things that I want to add:
 * Some sort of preset system maybe? So saving custom mapped midi bank values, etc.
 * More midi FX - Pot 2 is underutilized
 * DAW BPM Sync? No idea if this is possible.
-
-
-
-
-
