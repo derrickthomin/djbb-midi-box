@@ -79,6 +79,11 @@ Reference [this pinout](https://datasheets.raspberrypi.com/pico/Pico-R3-A4-Pinou
 **Screens Guide**
 ![scrn guid@0 5x](https://user-images.githubusercontent.com/47721204/166162453-ea4f6f45-ff22-409b-90e7-eaad3359af39.jpg)
 
+**Fun things to try**
+I created this to use with drums, but it can be fun with melodic stuff too. Try turning repeats on with repeat falloff set to 0 (Pot 2 all the way to the left). 
+
+Now hold both nav buttons, and press a note button. It should now be repeating forever at the repeat speed (knob 3). Do this again with other notes to make a lil looper.
+
 ## Customization
 You can open and edit code.py to your liking. I put some run options near the top of the file. These are constants that other parameters reference, so you can mess with these to easily change some of the general settings.
 
