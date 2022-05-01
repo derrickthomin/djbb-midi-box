@@ -1,7 +1,7 @@
 # djbb-midi-box
 DIY midi box based on a raspberry pi pico in a 3d printed case, featuring 16 arcade button "pads", 3 knobs for controlling volume & FX, and multiple modes of operation.
 
-**Features**: 
+## Features
 * 16 (non-velocity sensitive) buttons for sending midi messages
 * Preset midi banks that can be re-mapped
   * Note: these mappings are per session. They will not be saved when the device powers off.
