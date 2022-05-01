@@ -14,6 +14,8 @@ DIY midi box based on a raspberry pi pico in a 3d printed case, featuring 16 arc
 * 1 OLED screen [use this for the code to work out of the box](https://www.aliexpress.com/item/32957309383.html?spm=a2g0o.order_list.0.0.4488194dIRto7O)
   * SSD1306
 * 12 m3 nuts and bolts
+* 12 m3 heat inset nuts
+* Some wire (helpful to have some solid core as well - can solder the buttons together easily)
 * 16 arcade-style buttons
   * The shallower ones... like [these](https://www.aliexpress.com/item/4000751585184.html?spm=a2g0o.order_list.0.0.11481802rvdrTG) 
 * 3 10k linear potentiometers
@@ -26,25 +28,67 @@ DIY midi box based on a raspberry pi pico in a 3d printed case, featuring 16 arc
 
 ## Pico setup
 * Perform setup as described [here](https://www.raspberrypi.com/documentation/microcontrollers/micropython.html)
-* Add code.py and the lib folder to the base directory of your pico
-* If you aren't using the same screen as I noted above, you may have to alter code.py 
+* Add code.py and the lib folder from this repo to the base directory of your pico
+  * If you aren't using the same screen as I noted above, you may have to alter code.py 
 
 ## Building
 * Insert the buttons and pots into the front plate.
 * Use the M3 bolts to secure the screen, but DONT TIGHTEN TOO HARD. I cracked like 3 screens before I learned this lesson.
-* Wire the buttons and pots to the board
-* INSERT TABLE - BTN TO WHICH PIN
+* Use a soldering iron to heat-inset the the m3 nuts into the bottom part of the case.
+* Wire all of the button grounds together
+  * Here it is useful to use some solid core wire, completely stripped. You can snake this around and solder each ground pin to it. It then becomes a rail that you can solder the screen, pots, and control button grounds to as well (instead of using a bunch of different ground pins on the pico). 
+
+![Grnd Rail sm](https://user-images.githubusercontent.com/47721204/166162456-64432c59-6e11-4873-87d4-340109d0cc52.jpg)
+
+
+* Wire the buttons and pots to the board.
 * Wire the screen to the board
-* INSERT WIRING GUIDE FOR SCREEN
+
+Reference [this pinout](https://datasheets.raspberrypi.com/pico/Pico-R3-A4-Pinout.pdf) diagram
+
+**Buttons wiring**
+|GP2|GP3|GP4|GP5|
+|---|---|---|---|
+|GP0|GP1|GP8|GP9|
+|GP10|GP11|GP12|GP13|
+|GP14|GP15|GP16|GP17|
+
+**Pots wiring**
+|Pot 1 (Left)|Pot 2 (Mid)|Pot 3 (Right)|
+|---|---|---|
+|GP26|GP27|GP28|
+
+**Control Buttons**
+|Btn Left|Btn Right|
+|---|---|
+|GP20|GP21|
+
+**Screen**
+|SDA|SCL|GND|VCC|
+|---|---|---|---|
+|GP6|GP7|Any ground pin|Pin 36 (power)|
 
 ## Operation
 * Plug it into your computer
   * Tested on MacOS, Windows and iPadOS
 
-General
-
-Navigation / settings - Use the two nav buttons above the screen to change options within a screen. Press and hold one of the nav buttons and press the other to move screens in either direction (press and hold the left button and then click the right one to navigate to the next screen, or the opposite to go to the previous).
-vol
+**General Operation**
+![1 Pic Guide@0 5x](https://user-images.githubusercontent.com/47721204/166162447-f6612633-b3dd-44f2-8d21-a83da9dc8450.jpg)
 
 
-Screen #1 (default)
+**Screens Guide**
+![scrn guid@0 5x](https://user-images.githubusercontent.com/47721204/166162453-ea4f6f45-ff22-409b-90e7-eaad3359af39.jpg)
+
+## Customization
+You can open and edit code.py to your liking. I put some run options near the top of the file. These are constants that other parameters reference, so you can mess with these to easily change some of the general settings.
+
+
+Some things that I want to add:
+* Some sort of preset system maybe? So saving custom mapped midi bank values, etc.
+* More midi FX - Pot 2 is underutilized
+* DAW BPM Sync? No idea if this is possible.
+
+
+
+
+
