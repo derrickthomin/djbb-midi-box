@@ -92,7 +92,14 @@ Now hold both nav buttons, and press a note button. It should now be repeating f
 You can open and edit code.py to your liking. I put some run options near the top of the file. These are constants that other parameters reference, so you can mess with these to easily change some of the general settings.
 
 
-Some things that I want to add:
+**Some enhancement ideas:**
 * Some sort of preset system maybe? So saving custom mapped midi bank values, etc.
 * More midi FX - Pot 2 is underutilized
 * DAW BPM Sync? No idea if this is possible.
+
+**Other TODOs**
+Not sure if it's worth doing until this thing gets bigger and more unwieldy, but would be nice to..
+
+* Refactor code into multiple files. Many of the constants could be separated into another file to make the whole deal easier to read.
+* * Run options, midi dictionaries, etc.
+* Heck, maybe each screen should be it's own file.
