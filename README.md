@@ -10,7 +10,7 @@ DIY midi box based on a raspberry pi pico in a 3d printed case, featuring 16 arc
   * With free or BPM sync (ROUGH bpm sync, I should say)
 
 ## Hardware Needed
-* (Tools) - Soldering Iron, Solder, M3 Allen Wrench.
+* (Tools) - Soldering Iron, Solder, M3 Allen Wrench, 3D Printer.
 * 1 3D Printed case ([models here](https://www.printables.com/model/188671-djbb-arcade-button-midi-controller))
 * 1 Raspberry pi pico
 * 1 OLED screen [use this for the code to work out of the box](https://www.aliexpress.com/item/32957309383.html?spm=a2g0o.order_list.0.0.4488194dIRto7O)
