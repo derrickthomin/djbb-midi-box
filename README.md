@@ -42,7 +42,7 @@ DIY midi box based on a raspberry pi pico in a 3d printed case, featuring 16 arc
 * Wire all of the button grounds together
   * Here it is useful to use some solid core wire, completely stripped. You can snake this around and solder each ground pin to it. It then becomes a rail that you can solder the screen, pots, and control button grounds to as well (instead of using a bunch of different ground pins on the pico). 
 
-![Grnd Rail sm](https://user-images.githubusercontent.com/47721204/166162456-64432c59-6e11-4873-87d4-340109d0cc52.jpg)
+![image](https://user-images.githubusercontent.com/47721204/173163443-28e1ca41-6a99-4981-a4f2-9fb38efd4e20.png)
 
 
 * Wire the buttons and pots to the board.
